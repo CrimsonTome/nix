@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # FOR BIOS SYSTEMS FOR NOW
-
+loadkeys uk
 parted /dev/sda -- mklabel msdos
 parted /dev/sda -- mkpart primary 1MB -8GB
 parted /dev/sda -- mkpart primary linux-swap -8GB 100%
